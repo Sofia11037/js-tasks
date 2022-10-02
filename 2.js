@@ -47,13 +47,15 @@ console.log(result);
 // * предусмотреть вариант ввода одинаковых чисел
 
 let firstNumber = prompt('Пожалуйста, введите число.', '');
+let firstNumber1 = Number(firstNumber);
 
 let secondNumber = prompt('Пожалуйста, введите второе число.', '');
+let secondNumber2 = Number(secondNumber); 
 
-if  (firstNumber > secondNumber) {
-    console.log('Большее число: ' + firstNumber);
-} else if (firstNumber < secondNumber){
-    console.log('Большее число: ' + secondNumber );
+if  (firstNumber1 > secondNumber2) {
+    console.log('Большее число: ' + firstNumber1);
+} else if (firstNumber1 < secondNumber2){
+    console.log('Большее число: ' + secondNumber2);
 } else {
     console.log('Числа равны')
 }
@@ -66,10 +68,10 @@ let num1 = prompt('Пожалуйста, введите первое число.
 
 let num2 = prompt('Пожалуйста, введите второе число.', '');
 
-if (num1 % num2) {
-    console.log('false');
-} else {
+if (num1 % num2 == 0) {
     console.log('true');
+} else {
+    console.log('false');
 }   
 
 // Задание 6
@@ -125,6 +127,8 @@ if (amountOfDays > 7) {
     console.log(totalRentalPrice - 50 + '$'); 
 } else if (amountOfDays > 3) {
     console.log(totalRentalPrice - 20 + '$'); 
+} else {
+    console.log(totalRentalPrice + '$');
 }
 
 // Задание 9
