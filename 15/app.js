@@ -12,7 +12,7 @@ const renderCurrent = (data) => {
     document.querySelector('.data').append(time);
 
     const img = document.createElement('img');
-    img.src = data.list[0].weather[0].icon + '.png.crdownload';
+    img.src = `https://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png`; //////////////////////////////////////
     document.querySelector('.weather').append(img);
 
     const weath = document.createElement('p');
@@ -48,7 +48,7 @@ const renderForecast = (data) => {
                     <p class="date">${date[0]}</p>
                     <p class="time">${date[1]}</p>
                     </div>
-                    <div class="row__img"><img src="${weather + '.png.crdownload'}"> </div/>
+                    <div class="row__img"><img src="https://openweathermap.org/img/wn/${weather}@2x.png"> </div/
                     <div class="row__temp">${temp + '°C'}</div>
                 </div>
         `
@@ -60,11 +60,6 @@ const renderForecast = (data) => {
 
     }
 
-
-    // const date = document.createElement('p');
-    // date.className = 'date';
-    // date.textContent = data.list[8].dt_text;
-    // document.querySelector('.row__data').append(date);
 }
 
 
