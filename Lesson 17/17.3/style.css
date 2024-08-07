@@ -1,0 +1,13 @@
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+.container #username {
+  margin-bottom: 20px;
+}
+.container img {
+  width: 200px;
+}
+.container h1 {
+  font-size: 25px;
+}/*# sourceMappingURL=style.css.map */
